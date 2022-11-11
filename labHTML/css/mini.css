@@ -1,0 +1,62 @@
+/*
+========================
+SEZIONE HEADER
+========================
+*/
+
+header {
+    background: none;
+}
+
+header h1 {
+    line-height: 1em;
+    font-size: 5em;
+}
+
+/*
+========================
+SEZIONE MENU
+========================
+*/
+
+#menu {
+    float: none;
+    width: 90%;
+}
+
+/*
+========================
+SEZIONE MAIN
+========================
+*/
+
+main {
+    margin-left: 0em;
+}
+
+/*
+========================
+SEZIONE ASIDE
+========================
+*/
+
+aside {
+    float: none;
+    width: auto;
+    margin: 0em;
+    padding: 0.5em;
+}
+
+/*
+========================
+SEZIONE FOOTER
+========================
+*/
+
+footer {
+    display: flex;
+}
+
+footer img {
+    width: 13%;
+}

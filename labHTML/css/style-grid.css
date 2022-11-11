@@ -46,6 +46,13 @@ html {
 body {
     max-width: 1024px;
     border: 1px solid var(--bordercolor);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    "h h h"
+    "b b b"
+    "m c a"
+    "f f f";
 }
 
 .bold {
@@ -59,6 +66,7 @@ SEZIONE HEADER
 */
 
 header {
+    grid-area: h;
     text-align: center;
     padding: 1em;
     padding-top: 0.7em;
@@ -90,6 +98,7 @@ SEZIONE BREADCRUMB
 */
 
 #breadcrumb {
+    grid-area: b;
     background-color: var(--breadcrumbcolor);
     color: var(--txtcolor);
     font-size: 1.1em;
@@ -112,8 +121,7 @@ SEZIONE MENU
 */
 
 #menu {
-    float: left;
-    width: 25%;
+    grid-area: m;
     font-size: 1.3em;
     margin-top: 1em;
     margin-left: 1em;
@@ -151,13 +159,9 @@ SEZIONE ASIDE
 */
 
 aside {
-    float: right;
-    width: 20%;
+    grid-area: a;
     border: 1px solid var(--bordercolor);
     padding: 0.5em;
-    margin-top: 1em;
-    margin-right: 2%;
-    margin-left: 3%;
     overflow: hidden;
     background-color: var(--bgcolor);
     color: var(--txtcolor);
@@ -191,7 +195,7 @@ SEZIONE MAIN
 */
 
 main {
-    margin-left: 28%;
+    grid-area: c;
     background-color: var(--contentbgcolor);
     padding: 1em 2.5em;
 }
@@ -270,6 +274,7 @@ SEZIONE FOOTER
 */
 
 footer {
+    grid-area: f;
     background-color: var(--footercolor);
     color: var(--txtcolor);
     text-align: center;

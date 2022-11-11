@@ -1,25 +1,5 @@
 /*
 ========================
-SEZIONE VARIABILI
-========================
-*/
-
-:root {
-    --bgcolor: #0365ae;
-    --txtcolor: #fff;
-    --breadcrumbcolor: #163f77;
-    --footercolor: #163f77;
-    --newscolor: #f3c422;
-    --newstxtcolor: #000;
-    --contentxtcolor: #000;
-    --bordercolor: #000;
-    --contentbgcolor: #fff;
-    --linkcolor: #fff;
-    --videtedcolor: #f3c422;
-}
-
-/*
-========================
 SEZIONE DOCUMENTO
 ========================
 */
@@ -31,21 +11,10 @@ SEZIONE DOCUMENTO
 
 html,
 body {
-    font-size: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    font-family: "Times New Roman", serif;
     line-height: 1.5em;
     margin: auto;
-    background-color: var(--bgcolor);
-}
-
-html {
-    background-image: url(../materialePerStudenti/images/bg.png);
-    background-size: contain;
-}
-
-body {
-    max-width: 1024px;
-    border: 1px solid var(--bordercolor);
 }
 
 .bold {
@@ -60,27 +29,17 @@ SEZIONE HEADER
 
 header {
     text-align: center;
-    padding: 1em;
-    padding-top: 0.7em;
-    margin: 0.7em;
-    background: url("../materialePerStudenti/images/giannellipalleggio.jpg") right bottom no-repeat,
-        url("../materialePerStudenti/images/michielettocoppa.jpg") left top no-repeat;
-    background-size: 20%, 20%;
+    padding: 1em 0em 1.0em 0em;
+    margin: 0.5em;
 }
 
 header h2 {
-    margin-top: 1em;
-    color: var(--txtcolor);
+    margin-top: 0.3em;
+    font-size: 1.1em;
 }
 
 header h1 {
-    background-image: url(../materialePerStudenti/images/logo_fipav.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    text-indent: -9999em;
-    line-height: 1.5em;
-    font-size: 6em;
+    content: url(../materialePerStudenti/images/logo_fipav.svg);
 }
 
 /*
