@@ -10,7 +10,8 @@
                                    italia, nazionale italiana" />
     <meta name="author" content="Luca Marcato" />
     <link rel="stylesheet" href="css/style-grid.css" media="handled, screen" />
-    <link rel="stylesheet" href="css/mini.css" media="handled, screen and (max-width:600px) , only screen and (max-device-width:600px)" />
+    <link rel="stylesheet" href="css/mini.css"
+        media="handled, screen and (max-width:600px) , only screen and (max-device-width:600px)" />
     <link rel="stylesheet" href="css/print.css" media="print" />
     <link rel="shortcut icon" type="image/png" href="materialePerStudenti/images/favicon.ico" />
 </head>
@@ -31,8 +32,93 @@
             <li><a href="fairplay.html">Il <span lang="en">fairplay</span></a></li>
         </ul>
     </nav>
+    <p id="#tableSummary">descrizione della struttura della tabella</p>
     <main>
         <h1>La squadra</h1>
+        <table aria-describedby="#tableSummary">
+            <caption>Giocatori</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Giocatore</th>
+                    <th scope="col">Ruolo</th>
+                    <th scope="col">Maglia </th>
+                    <th scope="col">Punti</th>
+                    <th scope="col">Squadra di provenienza</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Simone Giannelli</th>
+                    <td data->Palleggiatore</td>
+                    <td data-title="">6</td>
+                    <td data-title="Punti">872</td>
+                    <td data-title="Squadra di provenienza">Sir Safety Susa Perugia</td>
+                </tr>
+                <tr>
+                    <th scope="row">Riccardo Sbertoli</th>
+                    <td>Palleggiatore</td>
+                    <td data-title="">8</td>
+                    <td data-title="Punti">393</td>
+                    <td data-title="Squadra di provenienza">Itas Trentino</td>
+                </tr>
+                <tr>
+                    <th scope="row">Fabio Balaso</th>
+                    <td>Libero</td>
+                    <td data-title="">7</td>
+                    <td data-title="Punti">1606</td>
+                    <td data-title="Squadra di provenienza">Cucine Lube Civitanova</td>
+                </tr>
+                <tr>
+                    <th scope="row">Leonardo Scanferla</th>
+                    <td>Libero</td>
+                    <td>24</td>
+                    <td data-title="Punti">623</td>
+                    <td data-title="Squadra di provenienza">Gas Sales Bluenergy Piacenza</td>
+                </tr>
+                <tr>
+                    <th scope="row">Simone Anzani</th>
+                    <td>Centrale</td>
+                    <td>17</td>
+                    <td data-title="Punti">2276</td>
+                    <td data-title="Squadra di provenienza">Cucine Lube Civitanova</td>
+                </tr>
+                <tr>
+                    <th scope="row">Gianluca Galassi</th>
+                    <td>Centrale</td>
+                    <td>14</td>
+                    <td data-title="Punti">1144</td>
+                    <td data-title="Squadra di provenienza">Vero Volley Monza</td>
+                </tr>
+                <tr>
+                    <th scope="row">Alessandro Michieletto</th>
+                    <td>Schiacciatore</td>
+                    <td>5</td>
+                    <td data-title="Punti">960</td>
+                    <td data-title="Squadra di provenienza">Itas Trentino</td>
+                </tr>
+                <tr>
+                    <th scope="row">Daniele Lavia</th>
+                    <td>Schiacciatore</td>
+                    <td>15</td>
+                    <td data-title="Punti">1604</td>
+                    <td data-title="Squadra di provenienza">Itas Trentino</td>
+                </tr>
+                <tr>
+                    <th scope="row">Yuri Romanò</th>
+                    <td>Schiacciatore</td>
+                    <td>17</td>
+                    <td data-title="Punti">1865</td>
+                    <td data-title="Squadra di provenienza">Gas Sales BluenergyPiacenza</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="3">Totale Punti</th>
+                    <td>11343</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
         <ul id="squadra">
             <li>
                 <dl class="giocatori">
